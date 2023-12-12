@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'SofiaProLight';
+    src: url('Fonts/sofiapro-light.woff2') format('woff2'),
+         url('Fonts/sofiapro-light.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'SofiaProLight', sans-serif;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: hsla(174, 70%, 74%, 0.1);
+    max-width: 1440px;
+}
+.wrapper {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container-head {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 460px;
+}
+.container-head > p {
+    color: hsla(0, 0%, 45%, 1);
+    size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    width: auto;
+    height: 75px;
+}
+.container-head > h3 {
+    font-size: 2em;
+    width: 268px;
+    height: 50px;
+}
+.container {
+    margin: 10px 15px 10px 5px;
+    flex: 1;
+    padding: 0;
+    max-width: 580px;
+    height: 100%;
+}
+img {
+    height: auto;
+    width: 20%;
+}
+.container > form {
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    height: 100%;
+    border-radius: 6px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-body {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-body > div {
+    flex: 1;
+    margin-right: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'SofiaProLight', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hsla(0, 0%, 94%, 1);
+}
+input {
+    color:hsla(208, 96%, 10%, 1);
+}
+input:focus {
+    border-color: hsla(174, 62%, 47%, 1);
+    outline: none;
+}
+input::placeholder {
+    color: hsla(0, 0%, 45%, 1);
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    background-color: hsla(174, 62%, 47%, 1);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid hsla(0, 0%, 94%, 1);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    bottom: -20px;
+}
+footer a {
+    color: hsla(174, 62%, 47%, 1);
+}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .container-body > div {
+        flex: 1 1 100%;
+        margin-right: 0; /* Reset margin for smaller screens */
+    }
+    footer {
+        margin-top: 20px;
+        position: absolute;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+        padding: 10px; 
+    }
+}
