@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>wp-pusher-checkout</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="pusher-logo" src="images/wppusher-logo copy.png" alt="Logo">
+            <ul>
+                <li>Download</li>
+                <li>Learn more</li>
+                <li>Pricing</li>
+                <li>Help</li>
+                <button><li id="Account">Account</li></button>
+            </ul>
+        </nav>
+        <hr id="line-1">
+    </header>
+    <div class="wp-pusher">
+        <div class="container-panel">
+            <div class="container-body">
+                <div class="container-title">
+                    <h2>Checkout</h2>
+                </div>
+                <hr id="line-2">
+                <section id="basic">
+                    <div class="icon-container-1">
+                        <img src="images/Oval_1.png" alt="Basic Icon">
+                        <span class="text"><strong>Your Basic Information</strong></span>
+                    </div>
+                    <form action="#">
+                        <div class="userinfo-container">
+                            <div class="half-width">
+                                <label for="firstname">First Name</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Jane" required>
+                            </div>
+                            <div class="half-width">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+                            </div>
+                            <div class="half-width">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="janedoe@example.com" required>
+                            </div>
+                        </div>
+                    </form>
+                    <hr id="basic-line">
+                </section>
+
+                <section id="payment">
+                    <div class="icon-container-2">
+                        <img src="images/Oval_2.png" alt="Payment Icon">
+                        <span class="text"><strong>Your Payment Information</strong></span>
+                    </div>
+                    <form action="#" method="post">
+                        <label for="creditcard">Credit Card</label>
+                        <div class="credit-card-container">
+                            <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number" minlength="16" maxlength="16" required>
+                            <input type="text" id="expirydate" name="expirydate" placeholder="MM/YY" minlength="5" maxlength="7" required>
+                            <input type="text" id="cvv" name="cvv" placeholder="CVC" minlength="3" maxlength="4" required>
+                        </div>
+                    </form>
+                    <hr id="payment-line">
+                </section>
+
+                <section id="purchase">
+                    <button type="button">
+                        <a id="pusher-button" href="#">Buy WP Pusher</a>
+                    </button>
+                    <div class="purchase-icon-container">
+                        <img src="images/Mask.png" alt="Purchase Icon">
+                        <span class="text"><strong>Need any help?</strong></span><span class="text" id="text2"> Don't hesitate to  <a id="support" href="#"> contact support!</a></span>
+                    </div>
+                    <div class="body-footer">
+                        <img id="body-footer" src="images/powered_by_stripe.png" alt="Body Footer">
+                    </div>    
+                </section>
+
+                <div class="sidebar-container">
+                    <div class="sidebar-content">
+                        <div class="pricing">
+                            <h3 class="sidebar-head">Freelancer</h3>
+                            <div class="price-container">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="per-year">/ year</span>
+                            </div>
+                            <p class="renewal-text">Automatically renews <br> after 1 year.</p>
+                        </div>
+
+                        <div class="details">
+                            <div class="sidebar-icon-container">
+                                <img src="images/Combined_Shape.png" alt="Details Icon">
+                                <span class="text">Use on <strong class="five"> 5 </strong> client sites</span>
+                            </div>
+                            <div class="sidebar-icon-container">
+                                <img src="images/Combined_Shape.png" alt="Details Icon">
+                                <span class="text">Private repositories</span>
+                            </div>
+                            <div class="sidebar-icon-container">
+                                <img src="images/Combined_Shape.png" alt="Details Icon">
+                                <span class="text">Email support</span>
+                            </div>
+                        </div>
+
+                        <div class="switch">
+                            <p>Need<strong> 20</strong> client sites?</p>
+                            <strong class="switch-strong">Switch to the <span class="agency">Agency</span> plan.</strong>
+                            <hr id="switch-underline">
+                        </div>
+
+                        <hr class="last-line">
+                        <blockquote>FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!</blockquote>
+
+                        <div class="owner-icon-container">
+                            <img src="images/Bitmap.png" alt="Owner Icon">
+                            <span class="text"><strong>Kirk Beard</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <h5>&copy; 2018 WP Pusher IVS · <span class="tos">Terms of Service </span></h5>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
