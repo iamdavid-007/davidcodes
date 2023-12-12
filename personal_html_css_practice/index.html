@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="/images/logo.png" alt="website logo" class="logo">
+            <div class="header-text">
+                <h1>The pupose is to learn <br> and be great at this.</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore praesentium accusantium animi sunt fugit? Porro explicabo fuga ipsa dolores quia laborum, dolorum at rem, sit, velit provident reprehenderit deleniti dicta.</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="/images/menu.png" id="menuBtn">
+
+    <!-- about -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="/images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In cum tempore voluptatibus saepe tenetur deserunt consectetur sequi dignissimos dolor obcaecati, reprehenderit sapiente harum dicta quis quasi corporis facere repellendus nam?</p><br><br>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+                <h2>"orem ipsum dolor, sit amet consectetur adipisicing elit. In cum tempore voluptatibus saepe tenetur deserunt consectetur"</h2>
+
+                <h3>--a wise man</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="/images/pic-1.png">
+                <h4>Learn Anywhere</h4>
+                <p>switch between your computer, tablet or mobile devices</p>
+            </div>
+            <div class="feature-col">
+                <img src="/images/pic-2.png">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching</p>
+            </div>
+            <div class="feature-col">
+                <img src="/images/pic-3.png">
+                <h4>Unlimited Access</h4>
+                <p>Choose what you would like to learn from our extensive subcription library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line1"></span><br>
+                <span class="line2"></span><br>
+                <span class="line3"></span>
+            </div>
+            <button class="common-btn">Start free trial</button>
+        </div>
+
+    </section>
+
+
+<!-- COURSES -->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse our Top <br> Courses</h1>
+                    <span class="square"></span>
+                    <p>contrary to popular belief, Lorem ipsum is not a simple random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden</p>
+                    <button class="common-btn">View All Courses</button>
+                    <div class="line">
+                        <span class="line1"></span><br>
+                        <span class="line2"></span><br>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="images/course.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sidenav= document.getElementById("sidenav")
+        sidenav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+            }
+            else{
+                sidenav.style.right = "-250px"
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
