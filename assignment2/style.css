@@ -41,6 +41,15 @@ body {
     width: auto;
     height: 75px;
 }
+.small-screen-p {
+    display: none;
+    color: hsla(0, 0%, 45%, 1);
+    size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    width: auto;
+    height: 75px;
+}
 .container-head > h3 {
     font-size: 2em;
     width: 268px;
@@ -144,5 +153,13 @@ footer a {
         left: 0;
         width: 100%;
         padding: 10px; 
+    }
+    .small-screen-p {
+        display: flex;
+        margin: 0;
+        max-height: 40px;
+    }
+    .big-screen-p {
+        display: none;
     }
 }
