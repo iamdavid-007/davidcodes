@@ -140,7 +140,7 @@ footer a {
 
     .container {
         margin-top: 20px;
-        width: auto;
+        max-width: 100%;
     }
     .container-body > div {
         flex: 1 1 100%;
