@@ -1,0 +1,6 @@
+title = "menu".upper()
+print(title.center(24, "="))
+print("")
+print("coffee".ljust(16, ".") + "$1".rjust(4))
+print("Biscuit".ljust(16, ".") + "0.3cents".rjust(10))
+print("peanut Butter".ljust(16, ".") + "$2".rjust(4))
